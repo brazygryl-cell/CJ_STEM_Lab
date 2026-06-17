@@ -1,512 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>CJ STEM Lab by Ms. CJ</title>
-  <meta name="description" content="CJ STEM Lab by Ms. CJ is a creative STEM and Computer Science space for students, families, educators, and future resources.">
-  <link rel="stylesheet" href="style.css">
+
+  <meta
+    name="description"
+    content="CJ STEM Lab by Ms. CJ offers creative STEM resources, coding activities, hands-on projects, student challenges, and classroom-ready materials for learners, families, educators, and schools."
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#home" class="logo">
-        <span class="logo-icon">CJ</span>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="CJ STEM Lab home">
+        <span class="logo-mark">CJ</span>
         <span class="logo-text">
           <strong>CJ STEM Lab</strong>
           <small>by Ms. CJ</small>
         </span>
       </a>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#build">Build Lab</a></li>
-        <li><a href="#code">Code Lab</a></li>
-        <li><a href="#create">Create Lab</a></li>
-        <li><a href="#showcase">Showcase</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="build-lab.html">Build Lab</a></li>
+        <li><a href="code-lab.html">Code Lab</a></li>
+        <li><a href="create-lab.html">Create Lab</a></li>
+        <li><a href="student-zone.html">Student Zone</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero section">
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero section">
       <div class="hero-content reveal">
         <p class="eyebrow">Build it. Code it. Create it.</p>
-        <h1>Welcome to CJ STEM Lab</h1>
+
+        <h1>Creative STEM resources for curious learners.</h1>
+
         <p class="hero-subtitle">
-          A creative STEM space by Ms. CJ where students build, code, design,
-          problem-solve, and bring bold ideas to life.
+          CJ STEM Lab by Ms. CJ helps students build, code, design, and
+          problem-solve through hands-on STEM activities, classroom-ready
+          resources, and creative technology challenges.
         </p>
 
-        <div class="hero-buttons">
-          <a href="#build" class="btn btn-primary">Explore Build Lab</a>
-          <a href="#code" class="btn btn-secondary">Start Coding</a>
-          <a href="#create" class="btn btn-secondary">Visit Create Lab</a>
-          <a href="#showcase" class="btn btn-ghost">View Student Showcase</a>
+        <div class="hero-actions">
+          <a href="resources.html" class="btn btn-primary">Browse Resources</a>
+          <a href="student-zone.html" class="btn btn-secondary">Try a Daily Challenge</a>
+          <a href="build-lab.html" class="btn btn-ghost">Explore the Labs</a>
         </div>
       </div>
 
-      <div class="hero-panel reveal">
-        <div class="terminal-card">
-          <div class="terminal-top">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      <div class="hero-card reveal" aria-label="CJ STEM Lab learning pathways">
+        <div class="hero-card-top">
+          <span class="pill">STEM</span>
+          <span class="pill">Coding</span>
+          <span class="pill">Design</span>
+        </div>
 
-          <div class="terminal-body">
-            <p>&gt; loading cj_stem_lab...</p>
-            <p>&gt; build_mode: active</p>
-            <p>&gt; code_mode: creative</p>
-            <p>&gt; student_ideas: unlimited</p>
-            <p class="success">ACCESS GRANTED: Innovation begins here.</p>
-          </div>
+        <div class="challenge-preview">
+          <p class="preview-label">Today’s STEM Spark</p>
+          <h2>Design a device that helps students stay organized.</h2>
+          <p>
+            Sketch the idea, label three features, and explain how it solves a
+            real classroom problem.
+          </p>
+        </div>
+
+        <div class="hero-card-footer">
+          <span>Daily challenges coming soon</span>
+          <a href="student-zone.html">Visit Student Zone</a>
         </div>
       </div>
     </section>
 
-    <section class="section feature-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Choose your lab</p>
-        <h2>Build, Code, and Create</h2>
-        <p>
-          CJ STEM Lab brings together engineering challenges, coding activities,
-          creative technology, student projects, and educator-friendly resources.
-        </p>
-      </div>
-
-      <div class="card-grid three-column">
-        <article class="feature-card reveal">
-          <div class="card-icon">🛠️</div>
-          <h3>Build</h3>
-          <p>Explore engineering design, prototypes, STEM fair ideas, and real-world challenges.</p>
-          <a href="#build" class="text-link">Enter Build Lab</a>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="card-icon">💻</div>
-          <h3>Code</h3>
-          <p>Practice HTML, CSS, JavaScript, Python, debugging, mini apps, and web design.</p>
-          <a href="#code" class="text-link">Enter Code Lab</a>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="card-icon">🎨</div>
-          <h3>Create</h3>
-          <p>Mix creativity with tech through manga ideas, profiles, digital design, and sketches.</p>
-          <a href="#create" class="text-link">Enter Create Lab</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section split-section">
-      <div class="split-content reveal">
-        <p class="eyebrow">What is CJ STEM Lab?</p>
-        <h2>A creative tech space for curious learners.</h2>
-        <p>
-          CJ STEM Lab is a personal STEM, Computer Science, and Creative Tech
-          website by Ms. CJ. It showcases hands-on learning, coding activities,
-          engineering projects, student creativity, teacher resources, and future
-          tutoring or resource offerings.
-        </p>
-      </div>
-
-      <div class="stats-panel reveal">
+    <!-- TRUST / AUDIENCE STRIP -->
+    <section class="section audience-strip-section">
+      <div class="audience-strip reveal" aria-label="CJ STEM Lab audiences">
         <div>
-          <strong>STEM</strong>
-          <span>Engineering and invention</span>
+          <strong>Students</strong>
+          <span>Challenges, practice, and project inspiration</span>
         </div>
+
         <div>
-          <strong>Code</strong>
-          <span>Web, Python, and apps</span>
+          <strong>Families</strong>
+          <span>STEM enrichment and learning support</span>
         </div>
+
         <div>
-          <strong>Create</strong>
-          <span>Design and storytelling</span>
+          <strong>Educators</strong>
+          <span>Classroom-ready activities and resources</span>
         </div>
+
         <div>
-          <strong>Share</strong>
-          <span>Privacy-safe student work</span>
+          <strong>Schools</strong>
+          <span>Creative STEM materials and future programs</span>
         </div>
       </div>
     </section>
 
+    <!-- LAB PATHWAYS -->
     <section class="section">
       <div class="section-heading reveal">
-        <p class="eyebrow">Featured Lab Activities</p>
-        <h2>Hands-on learning with purpose</h2>
+        <p class="eyebrow">Explore the Labs</p>
+        <h2>Three ways to learn through STEM.</h2>
         <p>
-          Activities help learners practice creative thinking, technical skills,
-          collaboration, reflection, and problem-solving.
+          Each lab focuses on a different part of creative STEM learning:
+          building, coding, and designing solutions.
         </p>
       </div>
 
-      <div class="activity-strip">
-        <article class="mini-card reveal">
-          <h3>Prototype Sprint</h3>
-          <p>Students sketch, build, test, improve, and present a working idea.</p>
+      <div class="card-grid three-column">
+        <article class="pathway-card reveal">
+          <div class="card-icon build-icon">🛠️</div>
+          <p class="card-kicker">Build Lab</p>
+          <h3>Hands-on engineering and invention</h3>
+          <p>
+            Explore bridge challenges, prototype design, engineering reflection,
+            STEM fair invention planning, and problem-solving activities.
+          </p>
+          <a href="build-lab.html" class="card-link">Explore Build Lab</a>
         </article>
 
-        <article class="mini-card reveal">
-          <h3>Debug the Lab</h3>
-          <p>Learners identify broken code, explain the issue, and repair it.</p>
+        <article class="pathway-card reveal">
+          <div class="card-icon code-icon">💻</div>
+          <p class="card-kicker">Code Lab</p>
+          <h3>Coding practice and web projects</h3>
+          <p>
+            Practice HTML, CSS, JavaScript, Python, debugging, game design,
+            mini apps, and beginner-friendly coding challenges.
+          </p>
+          <a href="code-lab.html" class="card-link">Explore Code Lab</a>
         </article>
 
-        <article class="mini-card reveal">
-          <h3>Design Challenge</h3>
-          <p>Students combine creativity and constraints to solve a real problem.</p>
-        </article>
-
-        <article class="mini-card reveal">
-          <h3>Reflection Station</h3>
-          <p>Students explain what worked, what failed, and what they would improve.</p>
+        <article class="pathway-card reveal">
+          <div class="card-icon create-icon">🎨</div>
+          <p class="card-kicker">Create Lab</p>
+          <h3>Creative tech and digital design</h3>
+          <p>
+            Blend STEM with visual storytelling, design prompts, project boards,
+            digital media, invention sketches, and creative tech projects.
+          </p>
+          <a href="create-lab.html" class="card-link">Explore Create Lab</a>
         </article>
       </div>
     </section>
 
-    <section class="section audience-section">
+    <!-- WHAT IS CJ STEM LAB -->
+    <section class="section split-section soft-section">
+      <div class="split-content reveal">
+        <p class="eyebrow">What is CJ STEM Lab?</p>
+        <h2>A learning space for building confidence through STEM.</h2>
+
+        <p>
+          CJ STEM Lab is a creative STEM, Computer Science, and educational
+          resource brand by Ms. CJ. It is designed for learners, families,
+          educators, and schools looking for hands-on activities that make STEM
+          feel clear, creative, and possible.
+        </p>
+
+        <p>
+          The goal is to help students think critically, try ideas, explain
+          their process, practice coding, and build projects that connect to the
+          real world.
+        </p>
+
+        <a href="about.html" class="btn btn-secondary">Learn About Ms. CJ</a>
+      </div>
+
+      <div class="feature-list reveal">
+        <div class="feature-list-item">
+          <span>01</span>
+          <div>
+            <h3>Hands-on projects</h3>
+            <p>Activities that help students plan, test, improve, and reflect.</p>
+          </div>
+        </div>
+
+        <div class="feature-list-item">
+          <span>02</span>
+          <div>
+            <h3>Coding practice</h3>
+            <p>Student-friendly practice for web design, programming, and debugging.</p>
+          </div>
+        </div>
+
+        <div class="feature-list-item">
+          <span>03</span>
+          <div>
+            <h3>Creative design</h3>
+            <p>Prompts and templates that connect imagination with problem-solving.</p>
+          </div>
+        </div>
+
+        <div class="feature-list-item">
+          <span>04</span>
+          <div>
+            <h3>Teacher resources</h3>
+            <p>Classroom-ready rubrics, worksheets, templates, and activity guides.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT ZONE PREVIEW -->
+    <section class="section student-zone-preview">
       <div class="section-heading reveal">
-        <p class="eyebrow">Who is it for?</p>
-        <h2>Students, families, and educators</h2>
+        <p class="eyebrow">Student Zone</p>
+        <h2>Daily challenges that make STEM feel fun.</h2>
+        <p>
+          The Student Zone is being designed as a kid-friendly space for daily
+          STEM prompts, coding warm-ups, design challenges, and creative
+          problem-solving activities.
+        </p>
+      </div>
+
+      <div class="card-grid three-column">
+        <article class="activity-card reveal">
+          <div class="card-icon">⚡</div>
+          <h3>Daily STEM Challenge</h3>
+          <p>
+            A quick problem-solving task that helps students think, test, and
+            explain their ideas.
+          </p>
+        </article>
+
+        <article class="activity-card reveal">
+          <div class="card-icon">💻</div>
+          <h3>Coding Warm-Up</h3>
+          <p>
+            Short HTML, CSS, JavaScript, or Python practice for building coding
+            confidence.
+          </p>
+        </article>
+
+        <article class="activity-card reveal">
+          <div class="card-icon">🎯</div>
+          <h3>Design Mission</h3>
+          <p>
+            A creative prompt that asks students to sketch, plan, improve, or
+            invent.
+          </p>
+        </article>
+      </div>
+
+      <div class="section-action reveal">
+        <a href="student-zone.html" class="btn btn-primary">Visit Student Zone</a>
+      </div>
+    </section>
+
+    <!-- RESOURCE PREVIEW -->
+    <section class="section resource-preview soft-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Resource Library</p>
+        <h2>Classroom-ready materials are coming together.</h2>
+        <p>
+          CJ STEM Lab will include resources for STEM projects, coding practice,
+          design thinking, classroom routines, assessments, and enrichment.
+        </p>
+      </div>
+
+      <div class="resource-preview-grid">
+        <article class="resource-card reveal">
+          <span class="badge free">Free Preview</span>
+          <h3>STEM Challenge Sheets</h3>
+          <p>
+            Student-friendly challenge pages with a problem, constraints,
+            planning space, and reflection.
+          </p>
+        </article>
+
+        <article class="resource-card reveal">
+          <span class="badge coming">Coming Soon</span>
+          <h3>Coding Review Worksheets</h3>
+          <p>
+            Practice pages for HTML, CSS, JavaScript, Python, vocabulary,
+            debugging, and logic.
+          </p>
+        </article>
+
+        <article class="resource-card reveal">
+          <span class="badge coming">Coming Soon</span>
+          <h3>Project Rubrics</h3>
+          <p>
+            Clear, student-friendly rubrics for projects, presentations,
+            engineering reflections, and coding tasks.
+          </p>
+        </article>
+
+        <article class="resource-card reveal">
+          <span class="badge coming">Coming Soon</span>
+          <h3>Activity Guides</h3>
+          <p>
+            Simple guides for educators who want organized STEM, coding, and
+            creative tech lessons.
+          </p>
+        </article>
+      </div>
+
+      <div class="section-action reveal">
+        <a href="resources.html" class="btn btn-secondary">Browse Resource Library</a>
+      </div>
+    </section>
+
+    <!-- WHY IT WORKS -->
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Why CJ STEM Lab?</p>
+        <h2>STEM should feel creative, structured, and doable.</h2>
+        <p>
+          The best STEM learning gives students room to explore while still
+          giving them the structure they need to succeed.
+        </p>
       </div>
 
       <div class="card-grid three-column">
         <article class="info-card reveal">
-          <h3>For Students</h3>
-          <p>Find project ideas, coding practice, design inspiration, and creative challenges.</p>
-        </article>
-
-        <article class="info-card reveal">
-          <h3>For Families</h3>
-          <p>See how hands-on STEM builds confidence and connects learning to real life.</p>
-        </article>
-
-        <article class="info-card reveal">
-          <h3>For Educators</h3>
-          <p>Browse classroom-friendly rubrics, challenge sheets, templates, and activity ideas.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="build" class="section lab-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Build Lab</p>
-        <h2>Engineering, prototypes, and problem-solving</h2>
-      </div>
-
-      <div class="card-grid">
-        <article class="lab-card reveal">
-          <span class="tag">Structures</span>
-          <h3>Bridge & Tower Challenges</h3>
-          <p>Design strong structures using limited materials, constraints, and testing goals.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Engineering</span>
-          <h3>Moon Lander Engineering</h3>
-          <p>Create a lander that protects a payload during impact and improves through testing.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Innovation</span>
-          <h3>STEM Fair Inventions</h3>
-          <p>Develop student-created solutions for real-world needs and community problems.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Design</span>
-          <h3>Prototype Design</h3>
-          <p>Move from idea to sketch to model while documenting each improvement.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Challenge</span>
-          <h3>Problem-Solving Challenges</h3>
-          <p>Use teamwork, testing, and iteration to solve open-ended problems.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Reflection</span>
-          <h3>Engineering Reflection Sheets</h3>
-          <p>Help students explain decisions, failures, redesigns, and final results.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="code" class="section lab-section alt-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Code Lab</p>
-        <h2>Web design, programming, debugging, and apps</h2>
-      </div>
-
-      <div class="card-grid">
-        <article class="lab-card reveal">
-          <span class="tag">HTML/CSS</span>
-          <h3>HTML/CSS Starter Projects</h3>
-          <p>Build simple web pages with structure, style, images, buttons, and layout.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">JavaScript</span>
-          <h3>JavaScript Mini Apps</h3>
-          <p>Create interactive tools using variables, events, functions, and DOM updates.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Python</span>
-          <h3>Python Practice</h3>
-          <p>Practice input, output, variables, conditionals, loops, lists, and problem-solving.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Debugging</span>
-          <h3>Debugging Challenges</h3>
-          <p>Find errors, explain what went wrong, and fix broken code.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Games</span>
-          <h3>Game Design</h3>
-          <p>Design simple games with rules, scoring, player choices, and feedback.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Web</span>
-          <h3>Web Design Projects</h3>
-          <p>Create polished websites with navigation, sections, cards, and responsive design.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="create" class="section lab-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Create Lab</p>
-        <h2>Creative tech, storytelling, and digital design</h2>
-      </div>
-
-      <div class="card-grid">
-        <article class="lab-card reveal">
-          <span class="tag">Story</span>
-          <h3>Manga Ideas</h3>
-          <p>Brainstorm visual stories, character worlds, conflict, and theme.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Characters</span>
-          <h3>Character Profiles</h3>
-          <p>Create characters with goals, traits, flaws, and visual design notes.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Writing</span>
-          <h3>Story Prompts</h3>
-          <p>Use prompts to spark original writing and creative problem-solving.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Design</span>
-          <h3>Digital Design</h3>
-          <p>Explore layouts, color palettes, posters, icons, and visual communication.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Tech</span>
-          <h3>Creative Tech</h3>
-          <p>Blend coding, design, media, animation, storytelling, and interactivity.</p>
-        </article>
-
-        <article class="lab-card reveal">
-          <span class="tag">Sketch</span>
-          <h3>Invention Sketches</h3>
-          <p>Turn big ideas into labeled sketches, diagrams, and prototype plans.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="showcase" class="section alt-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Student Showcase</p>
-        <h2>Privacy-safe student creativity</h2>
-        <p>
-          Student work is shared only with permission and privacy-safe labels.
-          No full student names or private student information are posted here.
-        </p>
-      </div>
-
-      <div class="filter-buttons reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="build">Build</button>
-        <button class="filter-btn" data-filter="code">Code</button>
-        <button class="filter-btn" data-filter="create">Create</button>
-      </div>
-
-      <div class="card-grid showcase-grid">
-        <article class="showcase-card reveal" data-category="build">
-          <div class="showcase-image">Prototype</div>
-          <span class="tag">Build</span>
-          <h3>Grade 6 Inventor</h3>
-          <p>A creative invention concept designed to solve a real-world problem.</p>
-        </article>
-
-        <article class="showcase-card reveal" data-category="code">
-          <div class="showcase-image">Website</div>
-          <span class="tag">Code</span>
-          <h3>Grade 8 Web Designer</h3>
-          <p>A student-built web project using HTML, CSS, layout, and visual design.</p>
-        </article>
-
-        <article class="showcase-card reveal" data-category="code">
-          <div class="showcase-image">App</div>
-          <span class="tag">Code</span>
-          <h3>Advanced Programming Student</h3>
-          <p>An interactive coding project with logic, user input, and polished styling.</p>
-        </article>
-
-        <article class="showcase-card reveal" data-category="create">
-          <div class="showcase-image">Design</div>
-          <span class="tag">Create</span>
-          <h3>Creative Tech Designer</h3>
-          <p>A digital design concept combining storytelling, visuals, and technology.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="resources" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Teacher Resources</p>
-        <h2>Classroom-ready STEM and coding tools</h2>
-      </div>
-
-      <div class="resource-grid">
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">Assessment</span>
-            <h3>Project Rubrics</h3>
-            <p>Clear criteria for STEM projects, coding tasks, presentations, and reflections.</p>
-          </div>
-          <a href="#contact" class="text-link">Ask about this</a>
-        </article>
-
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">STEM</span>
-            <h3>STEM Challenge Sheets</h3>
-            <p>Printable challenge sheets with problems, constraints, materials, and reflection prompts.</p>
-          </div>
-          <span class="badge">Coming Soon</span>
-        </article>
-
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">Coding</span>
-            <h3>Coding Review Worksheets</h3>
-            <p>Practice for HTML, CSS, JavaScript, Python, debugging, and vocabulary review.</p>
-          </div>
-          <a href="#contact" class="text-link">Ask about this</a>
-        </article>
-
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">Checks</span>
-            <h3>Exit Tickets</h3>
-            <p>Quick reflection and understanding checks for STEM and CS lessons.</p>
-          </div>
-          <span class="badge">Coming Soon</span>
-        </article>
-
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">Design</span>
-            <h3>Engineering Design Templates</h3>
-            <p>Guide students through ask, imagine, plan, create, test, improve, and share.</p>
-          </div>
-          <a href="#contact" class="text-link">Ask about this</a>
-        </article>
-
-        <article class="resource-card reveal">
-          <div>
-            <span class="tag">Guides</span>
-            <h3>Classroom Activity Guides</h3>
-            <p>Structured activity plans for STEM, creative tech, and coding lessons.</p>
-          </div>
-          <span class="badge">Coming Soon</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section split-section about-section alt-section">
-      <div class="about-card reveal">
-        <div class="about-avatar">Ms. CJ</div>
-      </div>
-
-      <div class="split-content reveal">
-        <p class="eyebrow">About Ms. CJ</p>
-        <h2>STEM, coding, creativity, and real-world problem-solving.</h2>
-        <p>
-          Ms. CJ is a STEM and Computer Science educator who creates hands-on
-          lessons that help students build confidence, think critically, and turn
-          their ideas into something real.
-        </p>
-        <p>
-          Her teaching style blends coding, creativity, engineering, design, and
-          problem-solving so students can explore technology in ways that feel
-          meaningful, student-friendly, and connected to the world around them.
-        </p>
-      </div>
-    </section>
-
-    <section class="section cta-section">
-      <div class="cta-card reveal">
-        <p class="eyebrow">Ready to explore?</p>
-        <h2>Bring bold STEM ideas to life.</h2>
-        <p>
-          Explore lab activities, student-safe showcase examples, teacher
-          resources, and future tutoring or digital learning opportunities.
-        </p>
-
-        <div class="cta-buttons">
-          <a href="#build" class="btn btn-primary">Explore Labs</a>
-          <a href="#contact" class="btn btn-secondary">Contact Ms. CJ</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Questions, collaborations, tutoring, or resources</h2>
-        <p>
-          Use this section as a placeholder until a full contact form or business email is ready.
-        </p>
-      </div>
-
-      <div class="contact-layout">
-        <div class="contact-card reveal">
-          <h3>Email</h3>
+          <h3>Student-friendly</h3>
           <p>
-            <a href="mailto:contact@cjstemlab.com">contact@cjstemlab.com</a>
+            Activities are written with clear steps, approachable language, and
+            room for creativity.
           </p>
-          <p class="small-note">Replace this with your real email or domain email when ready.</p>
-        </div>
+        </article>
 
-        <div class="contact-card reveal">
-          <h3>Contact Categories</h3>
-          <ul class="contact-list">
-            <li>Family questions</li>
-            <li>Collaboration</li>
-            <li>Tutoring inquiries</li>
-            <li>Resource questions</li>
-          </ul>
+        <article class="info-card reveal">
+          <h3>Teacher-ready</h3>
+          <p>
+            Resources are designed to support classroom use, review days,
+            project weeks, enrichment, and skill practice.
+          </p>
+        </article>
+
+        <article class="info-card reveal">
+          <h3>Real-world focused</h3>
+          <p>
+            Projects encourage students to solve problems, explain decisions,
+            and connect learning to everyday life.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section about-preview soft-section">
+      <div class="about-preview-card reveal">
+        <div class="about-avatar" aria-hidden="true">Ms. CJ</div>
+
+        <div class="about-preview-content">
+          <p class="eyebrow">About the Creator</p>
+          <h2>Meet Ms. CJ</h2>
+          <p>
+            Ms. CJ is a STEM and Computer Science educator who creates hands-on
+            lessons that combine coding, creativity, engineering, and real-world
+            problem-solving.
+          </p>
+          <p>
+            CJ STEM Lab was created to share practical, engaging materials that
+            help students build confidence and help educators bring creative STEM
+            learning to life.
+          </p>
+          <a href="about.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section final-cta-section">
+      <div class="final-cta reveal">
+        <p class="eyebrow">Ready to explore?</p>
+        <h2>Bring creative STEM learning to your classroom, home, or program.</h2>
+        <p>
+          Browse resources, explore lab activities, preview student challenges,
+          or reach out about future tutoring, collaboration, and materials.
+        </p>
+
+        <div class="hero-actions">
+          <a href="resources.html" class="btn btn-primary">Browse Resources</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Ms. CJ</a>
         </div>
       </div>
     </section>
@@ -515,9 +401,23 @@
   <button class="back-to-top" aria-label="Back to top">↑</button>
 
   <footer class="site-footer">
-    <div>
-      <strong>CJ STEM Lab</strong>
-      <p>Build it. Code it. Create it.</p>
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">CJ</span>
+        <span class="logo-text">
+          <strong>CJ STEM Lab</strong>
+          <small>Build it. Code it. Create it.</small>
+        </span>
+      </a>
+    </div>
+
+    <div class="footer-links" aria-label="Footer navigation">
+      <a href="build-lab.html">Build Lab</a>
+      <a href="code-lab.html">Code Lab</a>
+      <a href="create-lab.html">Create Lab</a>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
     </div>
 
     <p class="footer-copy">
