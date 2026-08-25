@@ -9,7 +9,7 @@ window.CJ_STEM_PRODUCTS = [
     format: "Printable PDF",
     details: "10 pages • 9 student activities",
     price: "",
-    thumbnail: "assets/products/back-to-school-stem/cover.webp",
+    thumbnail: "assets/products/back-to-school-stem/cover.svg",
     detailUrl: "products/back-to-school-stem.html",
     featured: true,
     badges: ["NEW", "PRINTABLE"],
