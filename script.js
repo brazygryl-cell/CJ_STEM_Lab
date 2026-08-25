@@ -63,9 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<p class="product-price">${product.price}</p>`
       : "";
 
+    const visual = product.thumbnail
+      ? `<img src="${product.thumbnail}" alt="Preview of ${product.title}" loading="lazy">`
+      : `
+        <div class="product-image-placeholder" role="img" aria-label="${product.title} product preview placeholder">
+          <span aria-hidden="true">⚙</span>
+          <strong>${product.visualLabel || product.shortTitle}</strong>
+          <small>${product.details}</small>
+        </div>
+      `;
+
     card.innerHTML = `
       <div class="product-image-wrap">
-        <img src="${product.thumbnail}" alt="Preview of ${product.title}" loading="lazy">
+        ${visual}
         <div class="product-badges">${badges}</div>
       </div>
       <div class="product-card-body">
