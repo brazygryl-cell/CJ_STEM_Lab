@@ -1,3 +1,14 @@
+(function loadCJTheme() {
+  if (document.querySelector('link[data-cj-theme]')) return;
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.dataset.cjTheme = "true";
+  link.href = window.location.pathname.includes("/products/")
+    ? "../theme.css"
+    : "theme.css";
+  document.head.appendChild(link);
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
