@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+<title id="title">Poster topics included</title><desc id="desc">Overview graphic listing the 13 poster topics in the bundle.</desc>
+<rect width="1600" height="1200" fill="#f2fbfb"/><rect x="55" y="55" width="1490" height="1090" rx="46" fill="#fff" stroke="#17385f" stroke-width="9"/>
+<text x="800" y="160" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="72" font-weight="900" fill="#17385f">13 POSTER TOPICS</text>
+<g font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#26384a">
+<text x="180" y="280">1. STEM</text><text x="180" y="350">2. Engineering Design Process</text><text x="180" y="420">3. Scientific Method</text><text x="180" y="490">4. What Is Computer Science?</text><text x="180" y="560">5. Algorithms</text><text x="180" y="630">6. Careers in Computer Science</text><text x="180" y="700">7. Binary</text>
+<text x="850" y="280">8. Inside a Computer</text><text x="850" y="350">9. Programming Fundamentals</text><text x="850" y="420">10. Cybersecurity</text><text x="850" y="490">11. AI &amp; Machine Learning</text><text x="850" y="560">12. Internet vs. the Web</text><text x="850" y="630">13. How Computers Work</text>
+</g>
+<rect x="220" y="800" width="1160" height="180" rx="38" fill="#fff6e6" stroke="#f4873f" stroke-width="7"/>
+<text x="800" y="875" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="48" font-weight="900" fill="#17385f">Designed for classroom reference + discussion</text>
+<text x="800" y="935" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#607184">Bright visuals • Student-friendly language • Printable PDF</text>
+<text x="800" y="1080" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18b8b2">CJ STEM Lab • Bundle overview graphic</text>
+</svg>
