@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+<title id="title">Classroom uses</title><desc id="desc">Product information graphic showing ways to use the STEM and Computer Science poster bundle.</desc>
+<rect width="1600" height="1200" fill="#f8f4ff"/><rect x="55" y="55" width="1490" height="1090" rx="46" fill="#fff" stroke="#17385f" stroke-width="9"/>
+<text x="800" y="170" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="76" font-weight="900" fill="#17385f">MADE FOR STEM SPACES</text>
+<g font-family="Arial Rounded MT Bold, Arial, sans-serif" font-weight="900" fill="#17385f">
+<rect x="170" y="300" width="540" height="260" rx="42" fill="#f2fbfb" stroke="#18b8b2" stroke-width="7"/><text x="440" y="415" text-anchor="middle" font-size="48">STEM LABS</text><text x="440" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#607184">Visual reminders during projects</text>
+<rect x="890" y="300" width="540" height="260" rx="42" fill="#fff6e6" stroke="#f4873f" stroke-width="7"/><text x="1160" y="415" text-anchor="middle" font-size="48">CS CLASSROOMS</text><text x="1160" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#607184">Concept references + discussion</text>
+<rect x="170" y="650" width="540" height="260" rx="42" fill="#fff3ef" stroke="#ee675f" stroke-width="7"/><text x="440" y="765" text-anchor="middle" font-size="48">BULLETIN BOARDS</text><text x="440" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#607184">Colorful academic decor</text>
+<rect x="890" y="650" width="540" height="260" rx="42" fill="#f8f4ff" stroke="#7d69c8" stroke-width="7"/><text x="1160" y="765" text-anchor="middle" font-size="48">HALLWAYS</text><text x="1160" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#607184">Celebrate STEM learning</text>
+</g>
+<text x="800" y="1080" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18b8b2">CJ STEM Lab • Classroom use guide</text>
+</svg>
