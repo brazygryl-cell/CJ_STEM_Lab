@@ -1,12 +1,23 @@
 (function loadCJTheme() {
-  if (document.querySelector('link[data-cj-theme]')) return;
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.dataset.cjTheme = "true";
-  link.href = window.location.pathname.includes("/products/")
-    ? "../theme.css"
-    : "theme.css";
-  document.head.appendChild(link);
+  if (!document.querySelector('link[data-cj-theme]')) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.dataset.cjTheme = "true";
+    link.href = window.location.pathname.includes("/products/")
+      ? "../theme.css"
+      : "theme.css";
+    document.head.appendChild(link);
+  }
+
+  if (!document.querySelector('link[data-cj-product-extras]')) {
+    const extras = document.createElement("link");
+    extras.rel = "stylesheet";
+    extras.dataset.cjProductExtras = "true";
+    extras.href = window.location.pathname.includes("/products/")
+      ? "../product-extras.css"
+      : "product-extras.css";
+    document.head.appendChild(extras);
+  }
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
