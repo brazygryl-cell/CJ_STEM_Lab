@@ -3,25 +3,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const rootPrefix = isProductPage ? "../" : "";
 
   function ensureBrandStyles() {
-    if (document.querySelector('link[href$="brand.css"]')) return;
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = `${rootPrefix}brand.css`;
-    document.head.appendChild(link);
+    ["brand.css", "platform.css"].forEach((fileName) => {
+      if (document.querySelector(`link[href$="${fileName}"]`)) return;
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = `${rootPrefix}${fileName}`;
+      document.head.appendChild(link);
+    });
   }
 
   function normalizeGlobalChrome() {
-    document.querySelectorAll('.nav-menu a[href$="resources.html"]').forEach((link) => {
-      link.textContent = "Shop & Resources";
-      link.classList.add("nav-shop");
+    const navItems = [
+      { label: "Home", href: "index.html" },
+      { label: "Curriculum", href: "curriculum.html" },
+      { label: "For Teachers", href: "teachers.html" },
+      { label: "Schools & Districts", href: "schools.html" },
+      { label: "Pilot Program", href: "pilot.html" },
+      { label: "Resources", href: "resources.html" },
+      { label: "About", href: "about.html" },
+      { label: "Sign In", href: "teacher-hub.html", className: "nav-signin" },
+    ];
+
+    const currentFile = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
+
+    document.querySelectorAll(".nav-menu").forEach((menu) => {
+      menu.innerHTML = navItems.map((item) => {
+        const isActive = currentFile === item.href;
+        const classes = [item.className || "", isActive ? "active" : ""].filter(Boolean).join(" ");
+        return `<li><a href="${rootPrefix}${item.href}"${classes ? ` class="${classes}"` : ""}>${item.label}</a></li>`;
+      }).join("");
     });
 
-    document.querySelectorAll('.nav-menu a[href$="contact.html"]').forEach((link) => {
-      link.classList.remove("nav-cta");
-    });
-
-    document.querySelectorAll('.footer-links a[href$="resources.html"]').forEach((link) => {
-      link.textContent = "Shop & Resources";
+    document.querySelectorAll(".footer-links").forEach((footerLinks) => {
+      footerLinks.innerHTML = navItems.slice(1, 7).map((item) => `<a href="${rootPrefix}${item.href}">${item.label}</a>`).join("");
     });
 
     document.querySelectorAll(".site-footer").forEach((footer) => {
@@ -29,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const social = document.createElement("div");
         social.className = "footer-social";
         social.setAttribute("aria-label", "Social links");
-        social.innerHTML = '<span>TikTok</span>';
+        social.innerHTML = '<span>CJ STEM Lab</span>';
         const copy = footer.querySelector(".footer-copy");
         footer.insertBefore(social, copy || null);
       }
