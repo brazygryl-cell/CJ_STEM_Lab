@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const rootPrefix = isProductPage ? "../" : "";
 
   function ensureBrandStyles() {
-    if (document.querySelector('link[href$="brand.css"]')) return;
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = `${rootPrefix}brand.css`;
-    document.head.appendChild(link);
+    ["brand.css", "platform.css"].forEach((fileName) => {
+      if (document.querySelector(`link[href$="${fileName}"]`)) return;
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = `${rootPrefix}${fileName}`;
+      document.head.appendChild(link);
+    });
   }
 
   function normalizeGlobalChrome() {
