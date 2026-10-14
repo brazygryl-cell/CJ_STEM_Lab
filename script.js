@@ -13,15 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function normalizeGlobalChrome() {
+    // Single source of truth for navigation across classic pages and the learning platform.
     const navItems = [
       { label: "Home", href: "index.html" },
+      { label: "Cyber Defense", href: "cyber-defense.html" },
+      { label: "Student Zone", href: "student-zone.html" },
       { label: "Curriculum", href: "curriculum.html" },
-      { label: "For Teachers", href: "teachers.html" },
-      { label: "Schools & Districts", href: "schools.html" },
-      { label: "Pilot Program", href: "pilot.html" },
+      { label: "Teacher Hub", href: "teacher-hub.html", className: "nav-signin" },
+      { label: "Schools", href: "schools.html" },
       { label: "Resources", href: "resources.html" },
       { label: "About", href: "about.html" },
-      { label: "Sign In", href: "teacher-hub.html", className: "nav-signin" },
     ];
 
     const currentFile = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
@@ -30,12 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.innerHTML = navItems.map((item) => {
         const isActive = currentFile === item.href;
         const classes = [item.className || "", isActive ? "active" : ""].filter(Boolean).join(" ");
-        return `<li><a href="${rootPrefix}${item.href}"${classes ? ` class="${classes}"` : ""}>${item.label}</a></li>`;
+        return `<li><a href="${rootPrefix}${item.href}"${classes ? ` class="${classes}"` : ""}${isActive ? ' aria-current="page"' : ""}>${item.label}</a></li>`;
       }).join("");
     });
 
     document.querySelectorAll(".footer-links").forEach((footerLinks) => {
-      footerLinks.innerHTML = navItems.slice(1, 7).map((item) => `<a href="${rootPrefix}${item.href}">${item.label}</a>`).join("");
+      footerLinks.innerHTML = navItems.slice(1).map((item) => `<a href="${rootPrefix}${item.href}">${item.label}</a>`).join("");
     });
 
     document.querySelectorAll(".site-footer").forEach((footer) => {
